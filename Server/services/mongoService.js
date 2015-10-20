@@ -28,7 +28,8 @@ db.once('open', function (callback) {
 	  cep: String,
 	  pesoLiquido: Number,
 	  pesoCubado: Number,
-	  status: Number
+	  status: Number,
+      statusName: String
 	}); 
 
 	schemas.push({name: 'PedidoSchema', object: pedidoSchema});

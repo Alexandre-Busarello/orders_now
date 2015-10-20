@@ -1,327 +1,237 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node',
-1 verbose cli   '/usr/bin/npm',
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'install',
-1 verbose cli   'mongoose-auto-increment',
+1 verbose cli   'enum',
 1 verbose cli   '--save' ]
-2 info using npm@1.3.6
-3 info using node@v0.10.36
-4 warn package.json pedido@1.0.0 No description
-5 warn package.json pedido@1.0.0 No repository field.
-6 warn package.json pedido@1.0.0 No README data
-7 warn package.json http@0.0.0 No description
-8 warn package.json http@0.0.0 No repository field.
-9 warn package.json http@0.0.0 No README data
-10 verbose readDependencies using package.json deps
-11 verbose cache add [ 'mongoose-auto-increment', null ]
-12 verbose cache add name=undefined spec="mongoose-auto-increment" args=["mongoose-auto-increment",null]
-13 verbose parsed url { protocol: null,
-13 verbose parsed url   slashes: null,
-13 verbose parsed url   auth: null,
-13 verbose parsed url   host: null,
-13 verbose parsed url   port: null,
-13 verbose parsed url   hostname: null,
-13 verbose parsed url   hash: null,
-13 verbose parsed url   search: null,
-13 verbose parsed url   query: null,
-13 verbose parsed url   pathname: 'mongoose-auto-increment',
-13 verbose parsed url   path: 'mongoose-auto-increment',
-13 verbose parsed url   href: 'mongoose-auto-increment' }
-14 silly lockFile a2b637ad-mongoose-auto-increment mongoose-auto-increment
-15 verbose lock mongoose-auto-increment /home/abusarello/.npm/a2b637ad-mongoose-auto-increment.lock
-16 silly lockFile a2b637ad-mongoose-auto-increment mongoose-auto-increment
-17 silly lockFile a2b637ad-mongoose-auto-increment mongoose-auto-increment
-18 verbose addNamed [ 'mongoose-auto-increment', '' ]
-19 verbose addNamed [ null, '*' ]
-20 silly lockFile 625aec1e-mongoose-auto-increment mongoose-auto-increment@
-21 verbose lock mongoose-auto-increment@ /home/abusarello/.npm/625aec1e-mongoose-auto-increment.lock
-22 silly addNameRange { name: 'mongoose-auto-increment', range: '*', hasData: false }
-23 verbose url raw mongoose-auto-increment
-24 verbose url resolving [ 'https://registry.npmjs.org/', './mongoose-auto-increment' ]
-25 verbose url resolved https://registry.npmjs.org/mongoose-auto-increment
-26 info trying registry request attempt 1 at 20:18:28
-27 verbose etag "CTD4EK3UDH1W8N4ENOFCNPG58"
-28 http GET https://registry.npmjs.org/mongoose-auto-increment
-29 http 304 https://registry.npmjs.org/mongoose-auto-increment
-30 silly registry.get cb [ 304,
-30 silly registry.get   { date: 'Sat, 17 Oct 2015 23:18:28 GMT',
-30 silly registry.get     via: '1.1 varnish',
-30 silly registry.get     'cache-control': 'max-age=60',
-30 silly registry.get     etag: '"CTD4EK3UDH1W8N4ENOFCNPG58"',
-30 silly registry.get     age: '0',
-30 silly registry.get     connection: 'keep-alive',
-30 silly registry.get     'x-served-by': 'cache-atl6222-ATL',
-30 silly registry.get     'x-cache': 'MISS',
-30 silly registry.get     'x-cache-hits': '0',
-30 silly registry.get     'x-timer': 'S1445123908.907357,VS0,VE542',
-30 silly registry.get     vary: 'Accept' } ]
-31 verbose etag mongoose-auto-increment from cache
-32 silly addNameRange number 2 { name: 'mongoose-auto-increment', range: '*', hasData: true }
-33 silly addNameRange versions [ 'mongoose-auto-increment',
-33 silly addNameRange   [ '1.0.0',
-33 silly addNameRange     '1.0.1',
-33 silly addNameRange     '1.1.0',
-33 silly addNameRange     '1.2.0',
-33 silly addNameRange     '1.1.1',
-33 silly addNameRange     '1.2.1',
-33 silly addNameRange     '1.2.2',
-33 silly addNameRange     '1.2.3',
-33 silly addNameRange     '1.3.0',
-33 silly addNameRange     '1.3.1',
-33 silly addNameRange     '2.0.0',
-33 silly addNameRange     '2.0.1',
-33 silly addNameRange     '2.0.2',
-33 silly addNameRange     '2.0.3',
-33 silly addNameRange     '2.0.4',
-33 silly addNameRange     '2.1.0',
-33 silly addNameRange     '2.1.1',
-33 silly addNameRange     '2.1.2',
-33 silly addNameRange     '2.1.3',
-33 silly addNameRange     '2.1.4',
-33 silly addNameRange     '3.0.0',
-33 silly addNameRange     '3.0.1',
-33 silly addNameRange     '3.0.2',
-33 silly addNameRange     '3.0.3',
-33 silly addNameRange     '3.0.4',
-33 silly addNameRange     '3.0.5',
-33 silly addNameRange     '3.0.6',
-33 silly addNameRange     '3.0.7',
-33 silly addNameRange     '3.0.8',
-33 silly addNameRange     '3.1.0',
-33 silly addNameRange     '3.2.0',
-33 silly addNameRange     '3.2.2',
-33 silly addNameRange     '3.2.3',
-33 silly addNameRange     '4.0.0',
-33 silly addNameRange     '3.2.4' ] ]
-34 verbose addNamed [ 'mongoose-auto-increment', '4.0.0' ]
-35 verbose addNamed [ '4.0.0', '4.0.0' ]
-36 silly lockFile d4c52210-mongoose-auto-increment-4-0-0 mongoose-auto-increment@4.0.0
-37 verbose lock mongoose-auto-increment@4.0.0 /home/abusarello/.npm/d4c52210-mongoose-auto-increment-4-0-0.lock
-38 silly lockFile d4c52210-mongoose-auto-increment-4-0-0 mongoose-auto-increment@4.0.0
-39 silly lockFile d4c52210-mongoose-auto-increment-4-0-0 mongoose-auto-increment@4.0.0
-40 silly lockFile 625aec1e-mongoose-auto-increment mongoose-auto-increment@
-41 silly lockFile 625aec1e-mongoose-auto-increment mongoose-auto-increment@
-42 silly resolved [ { name: 'mongoose-auto-increment',
-42 silly resolved     version: '4.0.0',
-42 silly resolved     description: 'This plugin allows you to auto-increment any field on any mongoose schema that you wish.',
-42 silly resolved     repository:
-42 silly resolved      { type: 'git',
-42 silly resolved        url: 'git://github.com/codetunnel/mongoose-auto-increment.git' },
-42 silly resolved     dependencies: { extend: '^2.0.0' },
-42 silly resolved     peerDependencies: { mongoose: '~4.0.0' },
-42 silly resolved     devDependencies: { async: '*', chai: '*', mocha: '*', mongoose: '~4.0.0' },
-42 silly resolved     keywords:
-42 silly resolved      [ 'mongoose',
-42 silly resolved        'plugin',
-42 silly resolved        'auto-increment',
-42 silly resolved        'auto',
-42 silly resolved        'increment',
-42 silly resolved        'automatic',
-42 silly resolved        'autoincrement',
-42 silly resolved        'auto_increment',
-42 silly resolved        'autoinc',
-42 silly resolved        'auto-inc',
-42 silly resolved        'auto_inc',
-42 silly resolved        'pureautoinc',
-42 silly resolved        'mongoose-pureautoinc' ],
-42 silly resolved     author:
-42 silly resolved      { name: 'Alex Ford',
-42 silly resolved        email: 'alex.ford@codetunnel.com',
-42 silly resolved        url: 'Chevex' },
-42 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
-42 silly resolved     scripts: { test: 'node_modules/mocha/bin/mocha' },
-42 silly resolved     bugs: { url: 'https://github.com/codetunnel/mongoose-auto-increment/issues' },
-42 silly resolved     readme: '# mongoose-auto-increment\n\n[![Build Status](https://travis-ci.org/codetunnel/mongoose-auto-increment.png?branch=master)](https://travis-ci.org/codetunnel/mongoose-auto-increment)\n[![Dependencies Status](https://gemnasium.com/codetunnel/mongoose-auto-increment.png)](https://gemnasium.com/codetunnel/mongoose-auto-increment)\n[![NPM version](https://badge.fury.io/js/mongoose-auto-increment.png)](http://badge.fury.io/js/mongoose-auto-increment)\n\n> Mongoose plugin that auto-increments any ID field on your schema every time a document is saved.\n\n---\n\n> This is the module used by [mongoose-simpledb](https://github.com/codetunnel/mongoose-simpledb) to increment Number IDs. You are perfectly able to use this module by itself if you would like. However, if you\'re looking to make your life easier when using [mongoose](http://mongoosejs.com/) then I highly recommend you check out simpledb. It\'s a small wrapper around mongoose but it makes it extremely easy to deal with your models and draws a clear path for how to use mongoose in your application.\n\n## Getting Started\n\n> npm install mongoose-auto-increment\n\nOnce you have the plugin installed it is very simple to use. Just get reference to it, initialize it by passing in your\nmongoose connection and pass `autoIncrement.plugin` to the `plugin()` function on your schema.\n\n> Note: You only need to initialize MAI once.\n\n````js\nvar mongoose = require(\'mongoose\'),\n    Schema = mongoose.Schema,\n    autoIncrement = require(\'mongoose-auto-increment\');\n\nvar connection = mongoose.createConnection("mongodb://localhost/myDatabase");\n\nautoIncrement.initialize(connection);\n\nvar bookSchema = new Schema({\n    author: { type: Schema.Types.ObjectId, ref: \'Author\' },\n    title: String,\n    genre: String,\n    publishDate: Date\n});\n\nbookSchema.plugin(autoIncrement.plugin, \'Book\');\nvar Book = connection.model(\'Book\', bookSchema);\n````\n\nThat\'s it. Now you can create book entities at will and they will have an `_id` field added of type `Number` and will automatically increment with each new document. Even declaring references is easy, just remember to change the reference property\'s type to `Number` instead of `ObjectId` if the referenced model is also using the plugin.\n\n````js\nvar authorSchema = new mongoose.Schema({\n    name: String\n});\n    \nvar bookSchema = new Schema({\n    author: { type: Number, ref: \'Author\' },\n    title: String,\n    genre: String,\n    publishDate: Date\n});\n    \nbookSchema.plugin(autoIncrement.plugin, \'Book\');\nauthorSchema.plugin(autoIncrement.plugin, \'Author\');\n````\n\n### Want a field other than `_id`?\n\n````js\nbookSchema.plugin(autoIncrement.plugin, { model: \'Book\', field: \'bookId\' });\n````\n\n### Want that field to start at a different number than zero or increment by more than one?\n\n````js\nbookSchema.plugin(autoIncrement.plugin, {\n    model: \'Book\',\n    field: \'bookId\',\n    startAt: 100,\n    incrementBy: 100\n});\n````\n\nYour first book document would have a `bookId` equal to `100`. Your second book document would have a `bookId` equal to `200`, and so on.\n\n### Want to know the next number coming up?\n\n````js\nvar Book = connection.model(\'Book\', bookSchema);\nBook.nextCount(function(err, count) {\n\n    // count === 0 -> true\n\n    var book = new Book();\n    book.save(function(err) {\n\n        // book._id === 0 -> true\n\n        book.nextCount(function(err, count) {\n\n            // count === 1 -> true\n\n        });\n    });\n});\n````\n\nnextCount is both a static method on the model (`Book.nextCount(...)`) and an instance method on the document (`book.nextCount(...)`).\n\n### Want to reset counter back to the start value?\n\n````js\nbookSchema.plugin(autoIncrement.plugin, {\n    model: \'Book\',\n    field: \'bookId\',\n    startAt: 100\n});\n\nvar Book = connection.model(\'Book\', bookSchema),\n    book = new Book();\n\nbook.save(function (err) {\n\n    // book._id === 100 -> true\n\n    book.nextCount(function(err, count) {\n\n        // count === 101 -> true\n\n        book.resetCount(function(err, nextCount) {\n\n            // nextCount === 100 -> true\n\n        });\n\n    });\n\n});\n````\n',
-42 silly resolved     readmeFilename: 'README.md',
-42 silly resolved     _id: 'mongoose-auto-increment@4.0.0',
-42 silly resolved     _from: 'mongoose-auto-increment@' } ]
-43 info install mongoose-auto-increment@4.0.0 into /home/abusarello/node.js/orders_now/Server
-44 info installOne mongoose-auto-increment@4.0.0
-45 info /home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment unbuild
-46 info preuninstall mongoose-auto-increment@4.0.0
-47 info uninstall mongoose-auto-increment@4.0.0
-48 verbose true,/home/abusarello/node.js/orders_now/Server/node_modules,/home/abusarello/node.js/orders_now/Server/node_modules unbuild mongoose-auto-increment@4.0.0
-49 info postuninstall mongoose-auto-increment@4.0.0
-50 verbose tar unpack /home/abusarello/.npm/mongoose-auto-increment/4.0.0/package.tgz
-51 silly lockFile 58eb10fb--modules-mongoose-auto-increment tar:///home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment
-52 verbose lock tar:///home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment /home/abusarello/.npm/58eb10fb--modules-mongoose-auto-increment.lock
-53 silly lockFile 098a2397-auto-increment-4-0-0-package-tgz tar:///home/abusarello/.npm/mongoose-auto-increment/4.0.0/package.tgz
-54 verbose lock tar:///home/abusarello/.npm/mongoose-auto-increment/4.0.0/package.tgz /home/abusarello/.npm/098a2397-auto-increment-4-0-0-package-tgz.lock
-55 silly gunzTarPerm modes [ '755', '644' ]
-56 silly gunzTarPerm extractEntry package.json
-57 silly gunzTarPerm extractEntry .npmignore
-58 silly gunzTarPerm extractEntry README.md
-59 silly gunzTarPerm extractEntry LICENSE
-60 silly gunzTarPerm extractEntry index.js
-61 silly gunzTarPerm extractEntry .travis.yml
-62 silly gunzTarPerm extractEntry CONTRIBUTING.md
-63 silly gunzTarPerm extractEntry test/test.js
-64 silly gunzTarPerm extractEntry test/mocha.opts
-65 silly lockFile 58eb10fb--modules-mongoose-auto-increment tar:///home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment
-66 silly lockFile 58eb10fb--modules-mongoose-auto-increment tar:///home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment
-67 silly lockFile 098a2397-auto-increment-4-0-0-package-tgz tar:///home/abusarello/.npm/mongoose-auto-increment/4.0.0/package.tgz
-68 silly lockFile 098a2397-auto-increment-4-0-0-package-tgz tar:///home/abusarello/.npm/mongoose-auto-increment/4.0.0/package.tgz
-69 info preinstall mongoose-auto-increment@4.0.0
-70 verbose readDependencies using package.json deps
-71 verbose readDependencies using package.json deps
-72 verbose cache add [ 'extend@^2.0.0', null ]
-73 verbose cache add name=undefined spec="extend@^2.0.0" args=["extend@^2.0.0",null]
-74 verbose parsed url { protocol: null,
-74 verbose parsed url   slashes: null,
-74 verbose parsed url   auth: null,
-74 verbose parsed url   host: null,
-74 verbose parsed url   port: null,
-74 verbose parsed url   hostname: null,
-74 verbose parsed url   hash: null,
-74 verbose parsed url   search: null,
-74 verbose parsed url   query: null,
-74 verbose parsed url   pathname: 'extend@^2.0.0',
-74 verbose parsed url   path: 'extend@^2.0.0',
-74 verbose parsed url   href: 'extend@^2.0.0' }
-75 verbose cache add name="extend" spec="^2.0.0" args=["extend","^2.0.0"]
-76 verbose parsed url { protocol: null,
-76 verbose parsed url   slashes: null,
-76 verbose parsed url   auth: null,
-76 verbose parsed url   host: null,
-76 verbose parsed url   port: null,
-76 verbose parsed url   hostname: null,
-76 verbose parsed url   hash: null,
-76 verbose parsed url   search: null,
-76 verbose parsed url   query: null,
-76 verbose parsed url   pathname: '^2.0.0',
-76 verbose parsed url   path: '^2.0.0',
-76 verbose parsed url   href: '^2.0.0' }
-77 verbose addNamed [ 'extend', '^2.0.0' ]
-78 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
-79 silly lockFile c49faa5d-extend-2-0-0 extend@^2.0.0
-80 verbose lock extend@^2.0.0 /home/abusarello/.npm/c49faa5d-extend-2-0-0.lock
-81 silly addNameRange { name: 'extend', range: '>=2.0.0-0 <3.0.0-0', hasData: false }
-82 verbose url raw extend
-83 verbose url resolving [ 'https://registry.npmjs.org/', './extend' ]
-84 verbose url resolved https://registry.npmjs.org/extend
-85 info trying registry request attempt 1 at 20:18:29
-86 verbose etag "4MO0CQ7Y5WWGQPXCIDH8N9NS"
-87 http GET https://registry.npmjs.org/extend
-88 http 304 https://registry.npmjs.org/extend
-89 silly registry.get cb [ 304,
-89 silly registry.get   { date: 'Sat, 17 Oct 2015 23:18:30 GMT',
-89 silly registry.get     via: '1.1 varnish',
-89 silly registry.get     'cache-control': 'max-age=60',
-89 silly registry.get     etag: '"4MO0CQ7Y5WWGQPXCIDH8N9NS"',
-89 silly registry.get     age: '11',
-89 silly registry.get     connection: 'keep-alive',
-89 silly registry.get     'x-served-by': 'cache-atl6225-ATL',
-89 silly registry.get     'x-cache': 'HIT',
-89 silly registry.get     'x-cache-hits': '1',
-89 silly registry.get     'x-timer': 'S1445123910.222491,VS0,VE0',
-89 silly registry.get     vary: 'Accept' } ]
-90 verbose etag extend from cache
-91 silly addNameRange number 2 { name: 'extend', range: '>=2.0.0-0 <3.0.0-0', hasData: true }
-92 silly addNameRange versions [ 'extend',
-92 silly addNameRange   [ '1.0.0',
-92 silly addNameRange     '1.1.0',
-92 silly addNameRange     '1.1.1',
-92 silly addNameRange     '1.1.3',
-92 silly addNameRange     '1.2.0',
-92 silly addNameRange     '1.2.1',
-92 silly addNameRange     '1.3.0',
-92 silly addNameRange     '2.0.0',
-92 silly addNameRange     '2.0.1',
-92 silly addNameRange     '3.0.0' ] ]
-93 verbose addNamed [ 'extend', '2.0.1' ]
-94 verbose addNamed [ '2.0.1', '2.0.1' ]
-95 silly lockFile 6f1e8ae3-extend-2-0-1 extend@2.0.1
-96 verbose lock extend@2.0.1 /home/abusarello/.npm/6f1e8ae3-extend-2-0-1.lock
-97 silly lockFile 6f1e8ae3-extend-2-0-1 extend@2.0.1
-98 silly lockFile 6f1e8ae3-extend-2-0-1 extend@2.0.1
-99 silly lockFile c49faa5d-extend-2-0-0 extend@^2.0.0
-100 silly lockFile c49faa5d-extend-2-0-0 extend@^2.0.0
-101 silly resolved [ { name: 'extend',
-101 silly resolved     author:
-101 silly resolved      { name: 'Stefan Thomas',
-101 silly resolved        email: 'justmoon@members.fsf.org',
-101 silly resolved        url: 'http://www.justmoon.net' },
-101 silly resolved     version: '2.0.1',
-101 silly resolved     description: 'Port of jQuery.extend for node.js and the browser',
-101 silly resolved     main: 'index',
-101 silly resolved     scripts:
-101 silly resolved      { test: 'npm run lint && node test/index.js && npm run coverage-quiet',
-101 silly resolved        coverage: 'covert test/index.js',
-101 silly resolved        'coverage-quiet': 'covert test/index.js --quiet',
-101 silly resolved        lint: 'jscs *.js */*.js' },
-101 silly resolved     contributors: [ [Object] ],
-101 silly resolved     keywords: [ 'extend', 'clone', 'merge' ],
-101 silly resolved     repository:
-101 silly resolved      { type: 'git',
-101 silly resolved        url: 'https://github.com/justmoon/node-extend.git' },
-101 silly resolved     dependencies: {},
-101 silly resolved     devDependencies: { tape: '^4.0.0', covert: '^1.0.1', jscs: '^1.11.3' },
-101 silly resolved     license: 'MIT',
-101 silly resolved     readme: '[![Build Status][travis-svg]][travis-url]\n[![dependency status][deps-svg]][deps-url]\n[![dev dependency status][dev-deps-svg]][dev-deps-url]\n\n# extend() for Node.js <sup>[![Version Badge][npm-version-png]][npm-url]</sup>\n\n`node-extend` is a port of the classic extend() method from jQuery. It behaves as you expect. It is simple, tried and true.\n\n## Installation\n\nThis package is available on [npm][npm-url] as: `extend`\n\n``` sh\nnpm install extend\n```\n\n## Usage\n\n**Syntax:** extend **(** [`deep`], `target`, `object1`, [`objectN`] **)**\n\n*Extend one object with one or more others, returning the modified object.*\n\nKeep in mind that the target object will be modified, and will be returned from extend().\n\nIf a boolean true is specified as the first argument, extend performs a deep copy, recursively copying any objects it finds. Otherwise, the copy will share structure with the original object(s).\nUndefined properties are not copied. However, properties inherited from the object\'s prototype will be copied over.\nWarning: passing `false` as the first argument is not supported.\n\n### Arguments\n\n* `deep` *Boolean* (optional)\nIf set, the merge becomes recursive (i.e. deep copy).\n* `target`\t*Object*\nThe object to extend.\n* `object1`\t*Object*\nThe object that will be merged into the first.\n* `objectN` *Object* (Optional)\nMore objects to merge into the first.\n\n## License\n\n`node-extend` is licensed under the [MIT License][mit-license-url].\n\n## Acknowledgements\n\nAll credit to the jQuery authors for perfecting this amazing utility.\n\nPorted to Node.js by [Stefan Thomas][github-justmoon] with contributions by [Jonathan Buchanan][github-insin] and [Jordan Harband][github-ljharb].\n\n[travis-svg]: https://travis-ci.org/justmoon/node-extend.svg\n[travis-url]: https://travis-ci.org/justmoon/node-extend\n[npm-url]: https://npmjs.org/package/extend\n[mit-license-url]: http://opensource.org/licenses/MIT\n[github-justmoon]: https://github.com/justmoon\n[github-insin]: https://github.com/insin\n[github-ljharb]: https://github.com/ljharb\n[npm-version-png]: http://vb.teelaun.ch/justmoon/node-extend.svg\n[deps-svg]: https://david-dm.org/justmoon/node-extend.svg\n[deps-url]: https://david-dm.org/justmoon/node-extend\n[dev-deps-svg]: https://david-dm.org/justmoon/node-extend/dev-status.svg\n[dev-deps-url]: https://david-dm.org/justmoon/node-extend#info=devDependencies\n\n',
-101 silly resolved     readmeFilename: 'README.md',
-101 silly resolved     bugs: { url: 'https://github.com/justmoon/node-extend/issues' },
-101 silly resolved     _id: 'extend@2.0.1',
-101 silly resolved     _from: 'extend@^2.0.0' } ]
-102 info install extend@2.0.1 into /home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment
-103 info installOne extend@2.0.1
-104 info /home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment/node_modules/extend unbuild
-105 verbose tar unpack /home/abusarello/.npm/extend/2.0.1/package.tgz
-106 silly lockFile 9d9bfe97-to-increment-node-modules-extend tar:///home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment/node_modules/extend
-107 verbose lock tar:///home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment/node_modules/extend /home/abusarello/.npm/9d9bfe97-to-increment-node-modules-extend.lock
-108 silly lockFile 800118ec-llo-npm-extend-2-0-1-package-tgz tar:///home/abusarello/.npm/extend/2.0.1/package.tgz
-109 verbose lock tar:///home/abusarello/.npm/extend/2.0.1/package.tgz /home/abusarello/.npm/800118ec-llo-npm-extend-2-0-1-package-tgz.lock
-110 silly gunzTarPerm modes [ '755', '644' ]
-111 silly gunzTarPerm extractEntry package.json
-112 silly gunzTarPerm extractEntry .npmignore
-113 silly gunzTarPerm extractEntry README.md
-114 silly gunzTarPerm extractEntry LICENSE
-115 silly gunzTarPerm extractEntry index.js
-116 silly gunzTarPerm extractEntry .jscs.json
-117 silly gunzTarPerm extractEntry .travis.yml
-118 silly gunzTarPerm extractEntry CHANGELOG.md
-119 silly gunzTarPerm extractEntry component.json
-120 silly lockFile 9d9bfe97-to-increment-node-modules-extend tar:///home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment/node_modules/extend
-121 silly lockFile 9d9bfe97-to-increment-node-modules-extend tar:///home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment/node_modules/extend
-122 silly lockFile 800118ec-llo-npm-extend-2-0-1-package-tgz tar:///home/abusarello/.npm/extend/2.0.1/package.tgz
-123 silly lockFile 800118ec-llo-npm-extend-2-0-1-package-tgz tar:///home/abusarello/.npm/extend/2.0.1/package.tgz
-124 info preinstall extend@2.0.1
-125 verbose readDependencies using package.json deps
-126 verbose readDependencies using package.json deps
-127 silly resolved []
-128 verbose about to build /home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment/node_modules/extend
-129 info build /home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment/node_modules/extend
-130 verbose linkStuff [ false,
-130 verbose linkStuff   false,
-130 verbose linkStuff   false,
-130 verbose linkStuff   '/home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment/node_modules' ]
-131 info linkStuff extend@2.0.1
-132 verbose linkBins extend@2.0.1
-133 verbose linkMans extend@2.0.1
-134 verbose rebuildBundles extend@2.0.1
-135 info install extend@2.0.1
-136 info postinstall extend@2.0.1
-137 verbose about to build /home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment
-138 info build /home/abusarello/node.js/orders_now/Server/node_modules/mongoose-auto-increment
-139 verbose linkStuff [ false,
-139 verbose linkStuff   false,
-139 verbose linkStuff   false,
-139 verbose linkStuff   '/home/abusarello/node.js/orders_now/Server/node_modules' ]
-140 info linkStuff mongoose-auto-increment@4.0.0
-141 verbose linkBins mongoose-auto-increment@4.0.0
-142 verbose linkMans mongoose-auto-increment@4.0.0
-143 verbose rebuildBundles mongoose-auto-increment@4.0.0
-144 verbose rebuildBundles [ 'extend' ]
-145 info install mongoose-auto-increment@4.0.0
-146 info postinstall mongoose-auto-increment@4.0.0
-147 verbose readDependencies using package.json deps
-148 verbose already installed skipping mongoose@~4.0.0 /home/abusarello/node.js/orders_now/Server
-149 silly resolved []
-150 error peerinvalid The package mongoose does not satisfy its siblings' peerDependencies requirements!
-150 error peerinvalid Peer mongoose-auto-increment@4.0.0 wants mongoose@~4.0.0
-151 error System Linux 3.17.4-301.fc21.x86_64
-152 error command "node" "/usr/bin/npm" "install" "mongoose-auto-increment" "--save"
-153 error cwd /home/abusarello/node.js/orders_now/Server
-154 error node -v v0.10.36
-155 error npm -v 1.3.6
-156 error code EPEERINVALID
-157 verbose exit [ 1, true ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose install initial load of C:\Users\Desenvolvedor\Nodejs\orders_now\Server\package.json
+5 warn package.json pedido@1.0.0 No description
+6 warn package.json pedido@1.0.0 No repository field.
+7 warn package.json pedido@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\body-parser\package.json
+9 verbose installManyTop reading scoped package data from C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\consolidate\package.json
+10 verbose installManyTop reading scoped package data from C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\ejs-locals\package.json
+11 verbose installManyTop reading scoped package data from C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\express\package.json
+12 verbose installManyTop reading scoped package data from C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\http\package.json
+13 verbose installManyTop reading scoped package data from C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\mongoose\package.json
+14 verbose installManyTop reading scoped package data from C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\mongoose-auto-increment\package.json
+15 verbose installManyTop reading scoped package data from C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\reload\package.json
+16 verbose installManyTop reading scoped package data from C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\swig\package.json
+17 info package.json reload@0.5.0 No license field.
+18 info package.json mongoose-auto-increment@4.0.0 No license field.
+19 info package.json http@0.0.0 http is also the name of a node core module.
+20 info package.json http@0.0.0 No description
+21 info package.json http@0.0.0 No repository field.
+22 info package.json http@0.0.0 No README data
+23 info package.json ejs-locals@1.0.2 No license field.
+24 verbose readDependencies loading dependencies from C:\Users\Desenvolvedor\Nodejs\orders_now\Server\package.json
+25 silly cache add args [ 'enum', null ]
+26 verbose cache add spec enum
+27 silly cache add parsed spec Result {
+27 silly cache add   raw: 'enum',
+27 silly cache add   scope: null,
+27 silly cache add   name: 'enum',
+27 silly cache add   rawSpec: '',
+27 silly cache add   spec: '*',
+27 silly cache add   type: 'range' }
+28 silly addNamed enum@*
+29 verbose addNamed "*" is a valid semver range for enum
+30 silly addNameRange { name: 'enum', range: '*', hasData: false }
+31 silly mapToRegistry name enum
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry uri https://registry.npmjs.org/enum
+35 verbose addNameRange registry:https://registry.npmjs.org/enum not in flight; fetching
+36 verbose request uri https://registry.npmjs.org/enum
+37 verbose request no auth needed
+38 info attempt registry request try #1 at 19:33:30
+39 verbose request id 00351b7adb77ccd1
+40 http request GET https://registry.npmjs.org/enum
+41 http 200 https://registry.npmjs.org/enum
+42 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+42 verbose headers   etag: '"ACPJDJVRSAPLFNHBZ7ETJZVRH"',
+42 verbose headers   'content-type': 'application/json',
+42 verbose headers   'cache-control': 'max-age=60',
+42 verbose headers   'content-length': '27593',
+42 verbose headers   'accept-ranges': 'bytes',
+42 verbose headers   date: 'Tue, 20 Oct 2015 21:33:32 GMT',
+42 verbose headers   via: '1.1 varnish',
+42 verbose headers   age: '0',
+42 verbose headers   connection: 'keep-alive',
+42 verbose headers   'x-served-by': 'cache-sjc3131-SJC',
+42 verbose headers   'x-cache': 'HIT',
+42 verbose headers   'x-cache-hits': '1',
+42 verbose headers   'x-timer': 'S1445376812.015407,VS0,VE92',
+42 verbose headers   vary: 'Accept' }
+43 silly get cb [ 200,
+43 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+43 silly get     etag: '"ACPJDJVRSAPLFNHBZ7ETJZVRH"',
+43 silly get     'content-type': 'application/json',
+43 silly get     'cache-control': 'max-age=60',
+43 silly get     'content-length': '27593',
+43 silly get     'accept-ranges': 'bytes',
+43 silly get     date: 'Tue, 20 Oct 2015 21:33:32 GMT',
+43 silly get     via: '1.1 varnish',
+43 silly get     age: '0',
+43 silly get     connection: 'keep-alive',
+43 silly get     'x-served-by': 'cache-sjc3131-SJC',
+43 silly get     'x-cache': 'HIT',
+43 silly get     'x-cache-hits': '1',
+43 silly get     'x-timer': 'S1445376812.015407,VS0,VE92',
+43 silly get     vary: 'Accept' } ]
+44 verbose get saving enum to C:\Users\Desenvolvedor\AppData\Roaming\npm-cache\registry.npmjs.org\enum\.cache.json
+45 silly addNameRange number 2 { name: 'enum', range: '*', hasData: true }
+46 silly addNameRange versions [ 'enum',
+46 silly addNameRange   [ '0.1.0',
+46 silly addNameRange     '0.2.0',
+46 silly addNameRange     '0.2.1',
+46 silly addNameRange     '0.2.2',
+46 silly addNameRange     '0.2.3',
+46 silly addNameRange     '0.2.4',
+46 silly addNameRange     '0.2.5',
+46 silly addNameRange     '0.2.6',
+46 silly addNameRange     '0.2.7',
+46 silly addNameRange     '1.0.0',
+46 silly addNameRange     '1.1.0',
+46 silly addNameRange     '2.0.0',
+46 silly addNameRange     '2.0.1',
+46 silly addNameRange     '2.0.2',
+46 silly addNameRange     '2.1.0',
+46 silly addNameRange     '2.2.0' ] ]
+47 silly addNamed enum@2.2.0
+48 verbose addNamed "2.2.0" is a plain semver version for enum
+49 silly mapToRegistry name enum
+50 silly mapToRegistry using default registry
+51 silly mapToRegistry registry https://registry.npmjs.org/
+52 silly mapToRegistry uri https://registry.npmjs.org/enum
+53 verbose addRemoteTarball https://registry.npmjs.org/enum/-/enum-2.2.0.tgz not in flight; adding
+54 verbose addRemoteTarball [ 'https://registry.npmjs.org/enum/-/enum-2.2.0.tgz',
+54 verbose addRemoteTarball   '6129fd41d10707a8fd9ca48a5620dedab7d876bd' ]
+55 info retry fetch attempt 1 at 19:33:31
+56 info attempt registry request try #1 at 19:33:31
+57 http fetch GET https://registry.npmjs.org/enum/-/enum-2.2.0.tgz
+58 http fetch 200 https://registry.npmjs.org/enum/-/enum-2.2.0.tgz
+59 silly fetchAndShaCheck shasum 6129fd41d10707a8fd9ca48a5620dedab7d876bd
+60 verbose addTmpTarball C:\Users\DESENV~1\AppData\Local\Temp\npm-9928-ca02024c\registry.npmjs.org\enum\-\enum-2.2.0.tgz not in flight; adding
+61 verbose addTmpTarball already have metadata; skipping unpack for enum@2.2.0
+62 silly cache afterAdd enum@2.2.0
+63 verbose afterAdd C:\Users\Desenvolvedor\AppData\Roaming\npm-cache\enum\2.2.0\package\package.json not in flight; writing
+64 verbose afterAdd C:\Users\Desenvolvedor\AppData\Roaming\npm-cache\enum\2.2.0\package\package.json written
+65 silly install resolved [ { author: { name: 'adrai' },
+65 silly install resolved     name: 'enum',
+65 silly install resolved     version: '2.2.0',
+65 silly install resolved     private: false,
+65 silly install resolved     main: 'index.js',
+65 silly install resolved     engines: { node: '>=0.6.0' },
+65 silly install resolved     directories: { lib: './lib' },
+65 silly install resolved     dependencies: {},
+65 silly install resolved     devDependencies:
+65 silly install resolved      { 'expect.js': '>= 0.1.2',
+65 silly install resolved        gulp: '^3.8.11',
+65 silly install resolved        'gulp-babel': '^4.0.0',
+65 silly install resolved        'gulp-bench': '^1.1.0',
+65 silly install resolved        'gulp-browserify': '^0.5.1',
+65 silly install resolved        'gulp-mocha': '^2.0.0',
+65 silly install resolved        'gulp-rename': '^1.2.0',
+65 silly install resolved        'gulp-rimraf': '^0.1.1',
+65 silly install resolved        'gulp-shell': '^0.4.0',
+65 silly install resolved        'gulp-uglify': '^1.1.0',
+65 silly install resolved        mocha: '>= 1.0.1',
+65 silly install resolved        zuul: '>= 1.0.1' },
+65 silly install resolved     description: 'Enum is a javascript module that introduces the Enum Type. It works for node.js and in the browser.',
+65 silly install resolved     keywords: [ 'enum' ],
+65 silly install resolved     homepage: 'https://github.com/adrai/enum',
+65 silly install resolved     repository: { type: 'git', url: 'git+ssh://git@github.com/adrai/enum.git' },
+65 silly install resolved     bugs: { url: 'https://github.com/adrai/enum/issues' },
+65 silly install resolved     licenses: [ [Object] ],
+65 silly install resolved     scripts:
+65 silly install resolved      { test: 'gulp test-ci',
+65 silly install resolved        build: 'gulp build',
+65 silly install resolved        'patch-release': 'npm run build && npm run test && npm version patch && npm publish && git push --follow-tags',
+65 silly install resolved        'minor-release': 'npm run build && npm run test && npm version minor && npm publish && git push --follow-tags',
+65 silly install resolved        'major-release': 'npm run build && npm run test && npm version major && npm publish && git push --follow-tags',
+65 silly install resolved        prepublish: 'gulp' },
+65 silly install resolved     testling: { browsers: [Object], harness: 'mocha', files: 'test/*.js' },
+65 silly install resolved     gitHead: '25a6c2ff225a9bbd22d60390b13fc92b0525a65f',
+65 silly install resolved     _id: 'enum@2.2.0',
+65 silly install resolved     _shasum: '6129fd41d10707a8fd9ca48a5620dedab7d876bd',
+65 silly install resolved     _from: 'enum@*',
+65 silly install resolved     _npmVersion: '2.11.3',
+65 silly install resolved     _nodeVersion: '0.12.7',
+65 silly install resolved     _npmUser: { name: 'adrai', email: 'adriano@raiano.ch' },
+65 silly install resolved     maintainers: [ [Object], [Object] ],
+65 silly install resolved     dist:
+65 silly install resolved      { shasum: '6129fd41d10707a8fd9ca48a5620dedab7d876bd',
+65 silly install resolved        tarball: 'http://registry.npmjs.org/enum/-/enum-2.2.0.tgz' },
+65 silly install resolved     _resolved: 'https://registry.npmjs.org/enum/-/enum-2.2.0.tgz' } ]
+66 info install enum@2.2.0 into C:\Users\Desenvolvedor\Nodejs\orders_now\Server
+67 info installOne enum@2.2.0
+68 verbose installOne of enum to C:\Users\Desenvolvedor\Nodejs\orders_now\Server not in flight; installing
+69 verbose lock using C:\Users\Desenvolvedor\AppData\Roaming\npm-cache\_locks\enum-977eac925b08f5c5.lock for C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\enum
+70 silly install write writing enum 2.2.0 to C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\enum
+71 verbose unbuild node_modules\enum
+72 silly gentlyRm C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\enum is being purged from base C:\Users\Desenvolvedor\Nodejs\orders_now\Server
+73 verbose gentlyRm don't care about contents; nuking C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\enum
+74 verbose tar unpack C:\Users\Desenvolvedor\AppData\Roaming\npm-cache\enum\2.2.0\package.tgz
+75 verbose tar unpacking to C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\enum
+76 silly gentlyRm C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\enum is being purged
+77 verbose gentlyRm don't care about contents; nuking C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\enum
+78 silly gunzTarPerm modes [ '777', '666' ]
+79 silly gunzTarPerm extractEntry package.json
+80 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+81 silly gunzTarPerm extractEntry README.md
+82 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+83 silly gunzTarPerm extractEntry enum-2.2.0.js
+84 silly gunzTarPerm modified mode [ 'enum-2.2.0.js', 420, 438 ]
+85 silly gunzTarPerm extractEntry enum-2.2.0.min.js
+86 silly gunzTarPerm modified mode [ 'enum-2.2.0.min.js', 420, 438 ]
+87 silly gunzTarPerm extractEntry index.js
+88 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+89 silly gunzTarPerm extractEntry dist/enum.js
+90 silly gunzTarPerm modified mode [ 'dist/enum.js', 420, 438 ]
+91 silly gunzTarPerm extractEntry dist/enumItem.js
+92 silly gunzTarPerm modified mode [ 'dist/enumItem.js', 420, 438 ]
+93 silly gunzTarPerm extractEntry dist/indexOf.js
+94 silly gunzTarPerm modified mode [ 'dist/indexOf.js', 420, 438 ]
+95 silly gunzTarPerm extractEntry dist/isType.js
+96 silly gunzTarPerm modified mode [ 'dist/isType.js', 420, 438 ]
+97 silly gunzTarPerm extractEntry licence
+98 silly gunzTarPerm modified mode [ 'licence', 420, 438 ]
+99 verbose write writing to C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\enum\package.json
+100 info preinstall enum@2.2.0
+101 verbose readDependencies loading dependencies from C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\enum\package.json
+102 verbose readDependencies loading dependencies from C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\enum\package.json
+103 silly install resolved []
+104 verbose about to build C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\enum
+105 info build C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\enum
+106 info linkStuff enum@2.2.0
+107 silly linkStuff enum@2.2.0 has C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules as its parent node_modules
+108 verbose linkBins enum@2.2.0
+109 verbose linkMans enum@2.2.0
+110 verbose rebuildBundles enum@2.2.0
+111 info install enum@2.2.0
+112 info postinstall enum@2.2.0
+113 verbose unlock done using C:\Users\Desenvolvedor\AppData\Roaming\npm-cache\_locks\enum-977eac925b08f5c5.lock for C:\Users\Desenvolvedor\Nodejs\orders_now\Server\node_modules\enum
+114 verbose validateInstall loading C:\Users\Desenvolvedor\Nodejs\orders_now\Server\package.json for validation
+115 verbose stack Error: The package mongoose@4.1.11 does not satisfy its siblings' peerDependencies requirements!
+115 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:125:32
+115 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install.js:268:7
+115 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:142:5
+115 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+115 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+115 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+115 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+115 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+115 verbose stack     at cb (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+115 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+116 verbose cwd C:\Users\Desenvolvedor\Nodejs\orders_now\Server
+117 error Windows_NT 6.3.9600
+118 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "enum" "--save"
+119 error node v4.2.1
+120 error npm  v2.14.7
+121 error code EPEERINVALID
+122 error peerinvalid The package mongoose@4.1.11 does not satisfy its siblings' peerDependencies requirements!
+122 error peerinvalid Peer mongoose-auto-increment@4.0.0 wants mongoose@~4.0.0
+123 verbose exit [ 1, true ]

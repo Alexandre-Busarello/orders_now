@@ -1,4 +1,5 @@
 var mongoService = require('../services/mongoService.js');
+var enums = require('./enums.js');
 
 function validade(pedido, response) {
 	if(!pedido.cliente) {
@@ -72,7 +73,7 @@ exports.initialize = function(app) {
 
 	app.post('/api/pedidos', function(request, response) {
 		var pedido = request.body;
-		
+
 		if (!validade(pedido, response))
 			return;
 
@@ -90,7 +91,9 @@ exports.initialize = function(app) {
 			numeroLogradouro: pedido.numeroLogradouro,
 			cep: pedido.cep,
 			pesoLiquido: pedido.pesoLiquido,
-			pesoCubado: pedido.pesoCubado
+			pesoCubado: pedido.pesoCubado,
+			status: enums.OrderStatus.EmAberto.value,
+            statusName: 'Em Aberto'
 		});
 
 		newPedido.save(function(err, pedido) {
@@ -136,7 +139,9 @@ exports.initialize = function(app) {
 			p.numeroLogradouro = pedido.numeroLogradouro,
 			p.cep = pedido.cep,
 			p.pesoLiquido = pedido.pesoLiquido,
-			p.pesoCubado = pedido.pesoCubado
+			p.pesoCubado = pedido.pesoCubado,
+            p.status = enums.OrderStatus.EmAberto.value,
+		    p.statusName = 'Em Aberto'
 
 			p.save(function(err, pedido) {
 				if (err) return console.error(err);
@@ -145,6 +150,43 @@ exports.initialize = function(app) {
 			}); 	
 		});
 
+	});
+
+	app.put('/api/pedidos/:id/Finalizar', function(request, response) {
+	    var pedidoId = request.params.id;
+	    var pedido = request.body;
+
+	    if (!validade(pedido, response))
+	        return;
+
+	    response.status(500, 'Erro não esperado.');
+
+	    if (isNaN(pedidoId)) {
+	        response.status(404).json({ status: 400, data: 'Id incorreto enviado na url.' });
+	        return;
+	    }
+
+	    var Pedido = mongoService.getModel('Pedido');
+	    Pedido.findOne({ _id: pedidoId }, function(err, p) {
+	        if (err) {
+	            console.error(err);
+	            response.status(500).json({ status: 500, data: 'Erro ocorrido: ' + err });
+	        }
+	        if (!p) {
+	            response.status(404).json({ status: 404, data: 'Pedido não encontrado.' });
+	        }
+
+	        console.dir(pedido);
+
+	        p.status = enums.OrderStatus.AgDistribuicao.value;
+	        p.statusName = 'Ag. Distribuição';
+
+	        p.save(function(err, pedido) {
+	            if (err) return console.error(err);
+	            console.dir('Pedido finalizado -> ' + pedido);
+	            response.status(200).json({ status: 200, data: 'Sucesso!' });
+	        });
+	    });
 	});
 };
 
