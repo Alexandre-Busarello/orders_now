@@ -5,6 +5,8 @@
   <title>{% block title %}My Site{% endblock %}</title>
 
   {% block head %}
+     <!-- AngularJS -->
+     <script src= "/bower_components/angular/angular.min.js"></script>
   {% endblock %}
 
   {% block css %}
@@ -39,9 +41,83 @@
   {% endblock %}
 </head>
 <body>
+  <div id="wrapper">
   {% block navigation %}
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">SB Admin v2.0</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="/"><i class="fa fa-dashboard fa-fw"></i> Home</a>
+                        </li>
+                        <li>
+                            <a href="/order"><i class="fa fa-edit fa-fw"></i> Pedidos</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Distribuição<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+  {% endblock %}
+
+  {% block content %}
 
   {% endblock %}
+
+  </div>
 
   {% block js %}
     <!-- jQuery -->
@@ -57,20 +133,9 @@
     <!-- Metis Menu Plugin JavaScript -->
     
     <script src="/bower_components/metisMenu/dist/metisMenu.min.js"></script>
-
-    
-    <!-- Morris Charts JavaScript -->
-    
-    <script src="/bower_components/raphael/raphael-min.js"></script>
-    
-    <script src="/bower_components/morrisjs/morris.min.js"></script>
-    
-    <script src="/js/morris-data.js"></script>
-
     
     <!-- Custom Theme JavaScript -->
-    
-    <script src="bower_components/startbootstrap-sb-admin-2/dist/js/sb-admin-2.js"></script>
+    <script src="/bower_components/startbootstrap-sb-admin-2/dist/js/sb-admin-2.js"></script>
   {% endblock %}
 </body>
 </html>            

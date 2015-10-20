@@ -21,7 +21,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/order', function(req, res) {
-    res.render('forms');
+    res.render('order');
 });
 
 webapi.initialize(app);

@@ -27,7 +27,8 @@ db.once('open', function (callback) {
 	  numeroLogradouro: Number,
 	  cep: String,
 	  pesoLiquido: Number,
-	  pesoCubado: Number
+	  pesoCubado: Number,
+	  status: Number
 	}); 
 
 	schemas.push({name: 'PedidoSchema', object: pedidoSchema});
@@ -37,18 +38,21 @@ db.once('open', function (callback) {
 
 var api = 
   {
-     connect: function (url) {
-	console.log('Connecting');
-        var connection = mongoose.connect(url);
-	autoIncrement.initialize(connection);
-     },
-     getModel: function (name) {
-	var schema = getSchema(name + 'Schema');
-        return mongoose.model(name, schema);
-     },
-     types: function () {
-	return mongoose.Types;
-     }
+		connect: 
+	    	function (url) {
+				console.log('Connecting');
+			    var connection = mongoose.connect(url);
+				autoIncrement.initialize(connection);
+	     	},
+	    getModel: 
+	    	function (name) {
+				var schema = getSchema(name + 'Schema');
+		        return mongoose.model(name, schema);
+		    },
+		types: 
+		    function () {
+		    	return mongoose.Types;
+		    }
   }
 
 exports.connect = api.connect;
