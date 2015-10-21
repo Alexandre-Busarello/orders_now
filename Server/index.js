@@ -10,8 +10,8 @@ app = express();
 app.engine('html', cons.swig);
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
-app.use(express.static(__dirname + '/static'));
-app.use('/js', express.static(__dirname + '/static/javascript'));
+app.use(express.static(__dirname + '/public'));
+app.use('/js', express.static(__dirname + '/public/javascript'));
 app.use(bodyParser.json());
 
 mongoService.connect('mongodb://localhost/test');
