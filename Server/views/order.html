@@ -11,7 +11,7 @@
         <div ng-app="Order" ng-controller="OrderCtrl" id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Pedidos</h1>
+                    <h1 class="page-header"><span ng-bind="tittle"></span></h1>
                    <button ng-show="showOrders" ng-click="newOrder()" type="button" class="btn btn-outline btn-primary btn-xs">Novo pedido</button> 
                     <a ng-show="showOrder" ng-click="cancel()" href style="float: right">Voltar para os pedidos</a>
                 </div>
@@ -31,7 +31,11 @@
                                             <td at-title="Peso Cubado" at-implicit at-sortable at-attribute="pesoCubado"></td>
                                             <td at-title="Peso Liquido" at-implicit at-sortable at-attribute="pesoLiquido"></td>
                                             <td at-title="Situação" at-implicit at-sortable at-attribute="statusName"></td>
-                                            <td at-title="Ações"><a ng-disabled="item.status != 1" ng-click="editOrder(item._id)" href>Editar</a> | <a ng-click="closeOrder(item._id, item)" href>Finalizar</a></td>
+                                            
+                                            <td at-title="Ações"> 
+                                                <button type="button" class="btn btn-link btn-table" ng-disabled="item.status != 1" ng-click="editOrder(item._id)">Editar</button> | 
+                                                <button type="button" class="btn btn-link btn-table" ng-disabled="item.status != 1" ng-click="closeOrder(item._id, item)">Finalizar</button> |
+                                                <button type="button" class="btn btn-link btn-table" ng-click="details(item._id, item)">Detalhes</button>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -96,6 +100,25 @@
                                 <button ng-click="saveOrder()" type="submit" class="btn btn-primary">Salvar</button>  
                                 <button ng-click="cancel()" type="submit" class="btn btn-default">Cancelar</button>                
                             </form>
+                        </div>
+                        <!-- /.panel-body --> 
+
+                        <div ng-show="showDetails" class="panel-body">
+                                <label>Cliente: <span ng-bind="order.cliente"></span> </label>   <br /> <br />  
+                                <label>Endereço <br />
+                                    <label>Logradouro: <span ng-bind="order.logradouro"></span> </label> <br />
+                                    <label>Bairro: <span ng-bind="order.bairro"></span> </label> <br />
+                                    <label>Cidade: <span ng-bind="order.cidade"></span> </label> <br />
+                                    <label>UF: <span ng-bind="order.uf"></span> </label> <br />
+                                    <label>País: <span ng-bind="order.pais"></span> </label> <br />
+                                    <label>Cep: <span ng-bind="order.cep"</span> </label> <br />
+                                </label>      
+                                <br />
+                                <br />
+                                <label>Carga <br />
+                                    <label>Peso líquido: <span ng-bind="order.pesoLiquido"></span> </label> <br />
+                                    <label>Peso cubado: <span ng-bind="order.pesoCubado"></span> </label> <br />
+                                </label>      
                         </div>
                         <!-- /.panel-body --> 
             </div>

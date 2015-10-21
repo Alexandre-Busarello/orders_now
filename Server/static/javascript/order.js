@@ -4,9 +4,11 @@ app.controller('OrderCtrl', function($scope, $http) {
         $scope.editId = 0;
         $scope.showOrders = true;
         $scope.showOrder = false;
+        $scope.showDetails = false;
         $scope.errors = [];
         $scope.order = {};
         $scope.orders = [];
+        $scope.tittle = 'Pedidos';
         $scope.config = {
             itemsPerPage: 15,
             fillLastPage: false
@@ -29,6 +31,20 @@ app.controller('OrderCtrl', function($scope, $http) {
     $scope.newOrder = function () {
     	$scope.showOrders = false;
     	$scope.showOrder = true;
+    }
+
+    $scope.details = function(id) {
+        var onSuccessFn = function(response) {
+            $scope.order = response.data.data;
+            $scope.showOrders = false;
+            $scope.showOrder = false;
+            $scope.showDetails = true;
+            $scope.tittle = 'Pedido ' + $scope.order.numeroPedido;
+        }
+        var onErrorFn = function(response) {
+            $scope.errors.push(response.data);
+        }
+        $http.get('/api/pedidos/' + id).then(onSuccessFn, onErrorFn);
     }
 
     $scope.closeOrder = function(id, item) {
